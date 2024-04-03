@@ -5,59 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','index')</title>
-    <style>
-        body {
-            margin: 0;
-            padding :0;
-        }
-        nav {
-            background: black;
-            color: white;
-            height: 50px;
-            padding: 5px;
-            margin:auto;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-        }
-        ul {
-            list-style: none;
-            display: flex;
-            gap:20px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-        li {
-            width: 200px;
-            height: 50px;
-            background: rgb(143, 143, 143);
-            border-radius: 5px;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        li:hover {
-            background: rgb(240, 239, 239);
-            color: black;
-        }
-    </style>
+    @vite('resources/css/app.css')
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="bg-black text-white h-16 flex items-center justify-center">
+        <ul class="flex gap-4">
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">البحث بالمؤسسة</li>
             <li>
-                <a href="{{route('departement')}}">
-                    البحث بالمؤسسة
+                <a href="{{route('departement')}}" class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
+                    البحث بالمصلحة
                 </a>
             </li>
-            <li>البحث بالمصلحة</li>
-            <li>المديريات الاقليمية</li>
-            <li>هيئة التفتيش</li>
-            <li>التوجيه التربوي</li>
-            <li>جمعيات المجتمع المدني</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">المديريات الاقليمية</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">هيئة التفتيش</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">التوجيه التربوي</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center text-center">جمعيات المجتمع المدني</li>
         </ul>
     </nav>
     @yield('navbar')
