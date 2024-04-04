@@ -10,22 +10,21 @@ class DepartementController extends Controller
 {
             public function index()
             {
-                $departements = Departement::select('departement')
-                    ->groupBy('departement')
-                    ->get();
+                $departements = Departement::distinct('departement')->get(['departement']);
 
-                return view('Departement.index', ['departements' => $departements]);
-    }
+                $regions = Departement::select('region')
+                            ->groupBy('region')
+                            ->get();
+            
+                return view('Departement.index', compact('departements', 'regions'));
+          }
 
-
-    public function region ($region) {
-        
-    }
-
-    public function show($departement)
+    public function show($region, $departement)
     {
-        $departements = Departement::where('departement', $departement)->get();
-        return view('Departement.show', ['departements' => $departements, 'departement' => $departement]);
+        $departements = Departement::where('region', $region)
+            ->where('departement', $departement)
+            ->get();
+        return view('Departement.show', ['departements' => $departements, 'departement' => $departement, 'region' => $region]);
     }
 
     public function show_name($name) {
