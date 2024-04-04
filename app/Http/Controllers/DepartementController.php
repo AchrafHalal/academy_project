@@ -17,6 +17,11 @@ class DepartementController extends Controller
                 return view('Departement.index', ['departements' => $departements]);
     }
 
+
+    public function region ($region) {
+        
+    }
+
     public function show($departement)
     {
         $departements = Departement::where('departement', $departement)->get();
