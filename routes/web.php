@@ -29,6 +29,12 @@ Route::get('/add-directive', function() {
 
 Route::get('/departement',[DepartementController::class , 'index'])->name('departement');
 
+
 Route::get('/etablissement',[EtablissmentController::class , 'index'])->name('etablissement');
 
 Route::get('/etablissement/{etablissement}',[EtablissmentController::class , 'show'])->name('etablissement.show');
+
+Route::get('/departement/{departement}',[DepartementController::class , 'show'])->name('departement.show');
+
+
+
