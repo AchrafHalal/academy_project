@@ -34,3 +34,4 @@ class DepartementController extends Controller
     }
 
 }
+

@@ -36,4 +36,3 @@ Route::get('/etablissement/{etablissement}',[EtablissmentController::class , 'sh
 
 Route::get('/departement/{departement}',[DepartementController::class , 'show'])->name('departement.show');
 
-
