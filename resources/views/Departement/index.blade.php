@@ -6,7 +6,9 @@
         <form id="departementForm" action="{{ route('departement.show', ['departement' => '__departement__']) }}" method="GET" class="flex items-center">
             <select name="departement" id="departementSelect" class="px-4 py-2 border border-gray-300 rounded-md mr-2 h-20 w-[450px]">
                     <option value="">--SELECT AN OPTION--</option>
+
                 @foreach ($departements as $departement)
+
                     <option value="{{ $departement->departement }}">{{ $departement->departement }}</option>
                 @endforeach
             </select>
@@ -23,4 +25,6 @@
             document.getElementById('selected_departement').value = selectedDepartement;
         });
     </script>
+
 @endsection
+
