@@ -6,13 +6,13 @@
         <form id="departementForm" method="GET" class="flex items-center">
             @csrf <!-- Add CSRF protection -->
             <select required name="region" id="regionSelect" class="px-4 py-2 border border-gray-300 rounded-md mr-2 h-20 w-[450px]">
-                <option value="">--SELECT AN OPTION--</option>
+                <option value="" class="text-center text-xl"> --المديرية-- </option>
                 @foreach ($regions as $region)
                     <option value="{{ $region->region }}">{{ $region->region }}</option>
                 @endforeach
             </select>
             <select required name="departement" id="departementSelect" class="px-4 py-2 border border-gray-300 rounded-md mr-2 h-20 w-[450px]">
-                <option value="">--SELECT AN OPTION--</option>
+                <option value="" class="text-center text-xl">--المصلحة--</option>
                 @foreach ($departements as $departement)
                     <option value="{{ $departement->departement }}">{{ $departement->departement }}</option>
                 @endforeach
