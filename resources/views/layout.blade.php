@@ -22,7 +22,6 @@
                     البحث بالمصلحة
                 </a>
             </li>
-            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">المديريات الاقليمية</li>
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">هيئة التفتيش</li>
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">التوجيه التربوي</li>
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center text-center">جمعيات المجتمع المدني</li>
