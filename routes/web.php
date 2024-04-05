@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AmbassadeurController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\EtablissmentController;
 use Illuminate\Support\Facades\Route;
@@ -15,17 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/recherche',function () {
+Route::get('/',function () {
     return view('index');
 });
 
-Route::get('/add-directive', function() {
-    return view('');
-});
+// departement routes
 
 Route::get('/departement',[DepartementController::class , 'index'])->name('departement');
 
@@ -33,8 +28,14 @@ Route::get('/departement/{region}/{departement}',[DepartementController::class ,
 
 Route::get('/departement/{name}',[DepartementController::class , 'show_name'])->name('departement.show_name');
 
+// etablissement routes
+
 Route::get('/etablissement',[EtablissmentController::class , 'index'])->name('etablissement');
 
 Route::get('/etablissement/{etablissement}',[EtablissmentController::class , 'show'])->name('etablissement.show');
 
+// Ombasadeur routes
 
+Route::get('/ambassadeur',[AmbassadeurController::class , 'index'])->name('ambassadeur');
+
+Route::get('/ambassadeur/{region}',[AmbassadeurController::class , 'show'])->name('departement.show');
