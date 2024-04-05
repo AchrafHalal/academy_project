@@ -1,7 +1,7 @@
 @extends('Departement.layout')
 
 @section('navbar')
-    <h1 class="text-2xl font-bold mb-4 text-center m-5">الوحدة/المصلحة</h1>
+    <h1 class="text-2xl font-bold mb-4 text-center m-5">المديري-    المصلحة</h1>
     <div class="flex justify-center mx-auto my-16">
         <form id="departementForm" method="GET" class="flex items-center">
             @csrf <!-- Add CSRF protection -->
