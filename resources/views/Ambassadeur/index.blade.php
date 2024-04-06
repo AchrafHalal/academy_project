@@ -17,7 +17,7 @@
     <script>
          document.getElementById('AmbassadeurForm').addEventListener('change', function () {
             var regionSelect = document.getElementById('regionSelect').value;
-            var ActionForm = '{{ route("departement.show", ["region" => ":region"]) }}';
+            var ActionForm = '{{ route("Ambassadeur.show", ["Ambassadeur_region" => ":region"]) }}';
             ActionForm = ActionForm.replace(':region',regionSelect);
             this.action = ActionForm;
          })
