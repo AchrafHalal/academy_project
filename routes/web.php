@@ -38,4 +38,4 @@ Route::get('/etablissement/{etablissement}',[EtablissmentController::class , 'sh
 
 Route::get('/ambassadeur',[AmbassadeurController::class , 'index'])->name('ambassadeur');
 
-Route::get('/ambassadeur/{region}',[AmbassadeurController::class , 'show'])->name('departement.show');
+Route::get('/ambassadeur/{Ambassadeur_region}',[AmbassadeurController::class , 'show'])->name('Ambassadeur.show');
