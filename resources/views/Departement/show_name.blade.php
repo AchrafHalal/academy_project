@@ -21,7 +21,7 @@
                             </div>
                             <div>
                                 <p class="text-gray-600">{{ $dept->phone }}</p>
-                                <p class="text-gray-600">{{ $dept->email ? 'غير موجود' }}</p>
+                                <p class="text-gray-600">{{ $dept->email ?? 'غير موجود' }}</p>
                             </div>
                         </div>
                     </li>
