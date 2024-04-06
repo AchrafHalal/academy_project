@@ -24,7 +24,7 @@
                             <td class="border px-4 py-2 text-center">{{ $ambs->zone }}</td>
                             <td class="border px-4 py-2 text-center">{{ $ambs->phone }}</td>
                             <td class="border px-4 py-2 text-center">{{ $ambs->email ?? 'غير موجود' }}</td>
-                            <td class="border px-4 py-2 text-center">{{ $ambs->note ? 'غير موجود' }}</td>
+                            <td class="border px-4 py-2 text-center">{{ $ambs->note ?? 'غير موجود' }}</td>
                         </tr>
                     @endforeach
                 </tbody>
