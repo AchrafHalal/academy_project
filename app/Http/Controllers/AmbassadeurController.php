@@ -15,9 +15,10 @@ class AmbassadeurController extends Controller
         return view('Ambassadeur.index', ['ambasaadeurs' => $ambasaadeurs]);
     }
 
-    public function show($region)
+    public function show($Ambassadeur_region)
     {
-        $ambasaadeurs = Ambassadeur::where('region', $region)->get();
-        return view('Ambassadeur.show', ['ambasaadeurs' => $ambasaadeurs, 'region' => $region]);
+        $ambasaadeurs = Ambassadeur::where('region', $Ambassadeur_region)->get();
+        return view('Ambassadeur.show', ['ambasaadeurs' => $ambasaadeurs, 'region' => $Ambassadeur_region]);
     }
+    public
 }
