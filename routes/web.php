@@ -3,6 +3,7 @@
 use App\Http\Controllers\AmbassadeurController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\EtablissmentController;
+use App\Http\Controllers\InspectionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,12 @@ Route::get('/etablissement',[EtablissmentController::class , 'index'])->name('et
 
 Route::get('/etablissement/{etablissement}',[EtablissmentController::class , 'show'])->name('etablissement.show');
 
+Route::get('/inspection',[InspectionController::class , 'index'])->name('inspection');
+
+
+Route::get('/inspection/{region}/{section}/{specialisation}', [InspectionController::class, 'show'])->name('inspection.show');
+
+Route::get('/inspection/{name}', [InspectionController::class, 'show_name'])->name('inspection.show_name');
 // Ombasadeur routes
 
 Route::get('/ambassadeur',[AmbassadeurController::class , 'index'])->name('ambassadeur');
