@@ -15,7 +15,7 @@ class InspectionController extends Controller
                              ->distinct()
                              ->get();
 
-        return view('inspection.index', ['inspections' => $inspections]);
+        return view('Inspection.index', ['inspections' => $inspections]);
     }
 
     public function show($region, $section, $specialisation)
