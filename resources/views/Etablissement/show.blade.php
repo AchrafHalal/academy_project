@@ -21,9 +21,9 @@
         <tbody class="divide-y divide-gray-200">
             @foreach($etablissements as $etablissement)
             <tr>
-                <td class="border px-4 py-2 text-center">{{ $etablissement->association_number }}</td>
-                <td class="border px-4 py-2 text-center">{{ $etablissement->association_president }}</td>
-                <td class="border px-4 py-2 text-center">{{ $etablissement->directeur_email }}</td>
+                <td class="border px-4 py-2 text-center">{{ $etablissement->association_number ?? 'غير موجود'}}</td>
+                <td class="border px-4 py-2 text-center">{{ $etablissement->association_president ?? 'غير موجود'}}</td>
+                <td class="border px-4 py-2 text-center">{{ $etablissement->directeur_email ?? 'غير موجود'}}</td>
                 <td class="border px-4 py-2 text-center">{{ $etablissement->directeur_number }}</td>
                 <td class="border px-4 py-2 text-center">{{ $etablissement->directeur_name }}</td>
                 <td class="border px-4 py-2 text-center">{{ $etablissement->Institution_name }}</td>

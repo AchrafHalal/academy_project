@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AmbassadeurController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\EtablissmentController;
 use App\Http\Controllers\InspectionController;
@@ -16,21 +17,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/recherche',function () {
+Route::get('/',function () {
     return view('index');
 });
 
-Route::get('/add-directive', function() {
-    return view('');
-});
+// departement routes
 
 Route::get('/departement',[DepartementController::class , 'index'])->name('departement');
 
-Route::get('/departement/{departement}',[DepartementController::class , 'show'])->name('departement.show');
+Route::get('/departement/{region}/{departement}',[DepartementController::class , 'show'])->name('departement.show');
+
+Route::get('/departement/{name}',[DepartementController::class , 'show_name'])->name('departement.show_name');
+
+// etablissement routes
 
 Route::get('/etablissement',[EtablissmentController::class , 'index'])->name('etablissement');
 
@@ -42,4 +41,8 @@ Route::get('/inspection',[InspectionController::class , 'index'])->name('inspect
 Route::get('/inspection/{region}/{section}/{specialisation}', [InspectionController::class, 'show'])->name('inspection.show');
 
 Route::get('/inspection/{name}', [InspectionController::class, 'show_name'])->name('inspection.show_name');
+// Ombasadeur routes
 
+Route::get('/ambassadeur',[AmbassadeurController::class , 'index'])->name('ambassadeur');
+
+Route::get('/ambassadeur/{Ambassadeur_region}',[AmbassadeurController::class , 'show'])->name('Ambassadeur.show');

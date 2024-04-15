@@ -13,10 +13,10 @@
     <nav class="bg-black text-white h-16 flex items-center justify-center">
         <ul class="flex gap-4">
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
-            <a href="{{route('etablissement')}}" class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
+                <a href="{{route('etablissement')}}" class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
                     البحث بالمؤسسة
-            </a>   
-             </li>
+                </a>
+                </li>
             <li>
                 <a href="{{route('departement')}}" class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
                     البحث بالمصلحة
@@ -29,6 +29,12 @@
                 </a>    
             </li>
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">التوجيه التربوي</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">هيئة التفتيش</li>
+            <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
+                <a href="{{route('ambassadeur')}}" class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center">
+                    التوجيه التربوي
+                </a>
+            </li>
             <li class="w-40 h-16 bg-gray-500 rounded-lg flex items-center justify-center text-center">جمعيات المجتمع المدني</li>
         </ul>
     </nav>
