@@ -1,6 +1,7 @@
+-- Active: 1710095898738@@127.0.0.1@3306@academia
 -- etablissement.sql
 
-use academia
+use academia;
 
 
 INSERT INTO etablissements (Institution_name, directeur_name, directeur_number, directeur_email, association_president, association_number)
