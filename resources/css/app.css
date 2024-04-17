@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Path: resources/css/app.css */
+
+/* Tailwind CSS v2.0+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.body {
+    font-family: 'Inter', sans-serif;
+}
+
+.pages {
+    @apply w-40 h-20 bg-gray-500 rounded-sm flex items-center justify-center hover:bg-white hover:text-black transition-all duration-150 ease-in
+}
+
+.navbar {
+    @apply bg-black text-white h-20 flex items-center justify-center 
+}
