@@ -12,7 +12,7 @@
 <body>
     <nav class="navb lg:w-full md:w-48 w-26 flex flex-col justify-center items-center gap-4">
         <div class="flex justify-center items-center">
-            <img src="logo.gif" class="w-64" alt="logo">
+            <img src="{{asset('logo.gif')}}" class="w-64" alt="logo">
         </div>
         <button id="toggle" class="bg-red-100 w-12 lg:hidden block" >menu</button>
         <div class="w-full" id="div-ul">
