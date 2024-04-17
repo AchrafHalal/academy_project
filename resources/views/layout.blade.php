@@ -33,7 +33,11 @@
                     التوجيه التربوي
                 </a>
             </li>
-            <li class="pages text-center">جمعيات المجتمع المدني</li>
+            <li class="pages text-center">
+                <a href="{{route('association')}}">
+                    جمعيات المجتمع المدني
+                </a>
+            </li>
         </ul>
     </nav>
     @yield('navbar')

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,6 @@
 
 /* Tailwind CSS v2.0+ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .body {
     font-family: 'Inter', sans-serif;
@@ -18,4 +18,16 @@
 
 .navbar {
     @apply bg-black text-white h-20 flex items-center justify-center 
+}
+
+.table-sm {
+    @apply mt-4 w-[720px]
+}
+
+.table-lg {
+    @apply mt-4 w-[1024px]
+}
+
+.table-head {
+    @apply px-4 py-2 bg-black text-white
 }

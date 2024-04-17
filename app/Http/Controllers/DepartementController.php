@@ -32,5 +32,10 @@ class DepartementController extends Controller
         return view('Departement.show_name', ['departements' => $departements, 'name' => $name]);
     }
 
+    public function edit($name) {
+        $person = Departement::where('name', $name)->get();
+        return view('Departement.update', ['person' => $person]);
+    }
+
 }
 

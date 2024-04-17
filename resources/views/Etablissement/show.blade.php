@@ -7,15 +7,15 @@
     @if($etablissements->isEmpty())
     <p>No data found for this etablissements.</p>
     @else
-    <table class="mt-4 w-full bg-white shadow-md rounded-lg overflow-hidden">
+    <table class="table-lg rounded-lg overflow-hidden">
         <thead class="bg-gray-800 text-white">
             <tr>
-                <th class="px-4 py-2">رقم الهاتف</th>
-                <th class="px-4 py-2">رئيس جمعية الاباءوالاولياء</th>
-                <th class="px-4 py-2">البريد الالكتروني</th>
-                <th class="px-4 py-2">رقم هاتف المدير</th>
-                <th class="px-4 py-2">مدير المؤسسة</th>
-                <th class="px-4 py-2">المؤسسة</th>
+                <th class="table-head">رقم الهاتف</th>
+                <th class="table-head">رئيس جمعية الاباءوالاولياء</th>
+                <th class="table-head">البريد الالكتروني</th>
+                <th class="table-head">رقم هاتف المدير</th>
+                <th class="table-head">مدير المؤسسة</th>
+                <th class="table-head">المؤسسة</th>
             </tr>
         </thead>
         <tbody class="divide-y divide-gray-200">

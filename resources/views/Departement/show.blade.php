@@ -7,12 +7,12 @@
         @if($departements->isEmpty())
             <p>No data found for this departements.</p>
         @else
-            <table class="mt-4 w-full">
+            <table class="table-sm">
                 <thead>
                     <tr>
-                        <th class="px-4 py-2">الاسم</th>
-                        <th class="px-4 py-2">المهمة</th>
-                        <th class="px-4 py-2">الاطلاع</th>
+                        <th class="table-head">الاسم</th>
+                        <th class="table-head">المهمة</th>
+                        <th class="table-head">الاطلاع</th>
                     </tr>
                 </thead>
                 <tbody>
