@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('Institution_name');
             $table->string('directeur_name');
             $table->string('directeur_number');
-            $table->string('directeur_email');
-            $table->string('association_president');
-            $table->string('association_number');
+            $table->string('directeur_email')->nullable();
+            $table->string('association_president')->nullable();
+            $table->string('association_number')->nullable();
             $table->timestamps();
         });
     }

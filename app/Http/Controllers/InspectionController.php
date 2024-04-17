@@ -15,7 +15,7 @@ class InspectionController extends Controller
                              ->distinct()
                              ->get();
 
-        return view('inspection.index', ['inspections' => $inspections]);
+        return view('Inspection.index', ['inspections' => $inspections]);
     }
 
     public function show($region, $section, $specialisation)
@@ -25,11 +25,11 @@ class InspectionController extends Controller
                              ->where('specialisation', $specialisation)
                              ->get();
 
-        return view('inspection.show', ['inspections' => $inspections, 'inspection' => $region]);
+        return view('Inspection.show', ['inspections' => $inspections, 'inspection' => $region]);
     }
 
     public function show_name($name) {
         $inspections = Inspection::where('inspecteur_name', $name)->get();
-        return view('inspection.show_name', ['inspections' => $inspections, 'name' => $name]);
+        return view('Inspection.show_name', ['inspections' => $inspections, 'name' => $name]);
     }
 }

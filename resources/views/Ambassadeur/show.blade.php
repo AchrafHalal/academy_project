@@ -7,14 +7,14 @@
         @if($ambasaadeurs->isEmpty())
             <p>No data found for this departements.</p>
         @else
-            <table class="mt-4 w-full">
+            <table class="table-lg">
                 <thead>
                     <tr>
-                        <th class="px-4 py-2">الاسم</th>
-                        <th class="px-4 py-2">القطاع</th>
-                        <th class="px-4 py-2">رقم الهاتف</th>
-                        <th class="px-4 py-2">البريد الالكتروني</th>
-                        <th class="px-4 py-2">ملاحظات</th>
+                        <th class="table-head">الاسم</th>
+                        <th class="table-head">القطاع</th>
+                        <th class="table-head">رقم الهاتف</th>
+                        <th class="table-head">البريد الالكتروني</th>
+                        <th class="table-head">ملاحظات</th>
                     </tr>
                 </thead>
                 <tbody>

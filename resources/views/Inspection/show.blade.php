@@ -7,12 +7,12 @@
         @if($inspections->isEmpty())
             <p>No data found for this inspections.</p>
         @else
-            <table class="mt-4 w-full">
+            <table class="table-sm">
                 <thead>
                     <tr>
-                        <th class="px-4 py-2">الاسم</th>
-                        <th class="px-4 py-2">التخصص</th>
-                        <th class="px-4 py-2">الاطلاع</th>
+                        <th class="table-head">الاسم</th>
+                        <th class="table-head">التخصص</th>
+                        <th class="table-head">الاطلاع</th>
                     </tr>
                 </thead>
                 <tbody>
