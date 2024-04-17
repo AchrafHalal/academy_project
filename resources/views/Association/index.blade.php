@@ -1,4 +1,4 @@
-@extends('Departement.layout')
+@extends('layout')
 
 @section('navbar')
     <h1 class="text-2xl font-bold mb-4 text-center m-5">جمعيات المجتمع المدني</h1>
@@ -6,7 +6,7 @@
         <form id="associationForm" method="GET" class="flex items-center">
             @csrf <!-- Add CSRF protection -->
             <select required name="region" id="AssociationSelected" class="px-4 py-2 border border-gray-300 rounded-md mr-2 h-20 w-[450px]">
-                <option value="" class="text-center text-xl"> --------- </option>
+                <option value="" class="text-center text-xl"> --جمعيات المجتمع المدني-- </option>
                 @foreach ($associations as $association)
                     <option value="{{ $association->name }}">{{ $association->name }}</option>
                 @endforeach

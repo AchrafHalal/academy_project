@@ -13,7 +13,7 @@
 }
 
 .pages {
-    @apply w-40 h-20 bg-gray-500 rounded-sm flex items-center justify-center hover:bg-white hover:text-black transition-all duration-150 ease-in
+    @apply w-40 h-20 rounded-sm flex items-center justify-center hover:bg-white hover:text-black transition-all duration-150 ease-in
 }
 
 .navbar {
@@ -30,4 +30,49 @@
 
 .table-head {
     @apply px-4 py-2 bg-black text-white
+}
+
+
+/* Path: resources/css/app.css */
+
+
+
+.navb{
+    background-color: #e7e7e7;
+}
+
+.navb ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navb ul li{
+    list-style: none;
+    margin: 0 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navb ul li a{
+    text-decoration: none;
+    color: #4f4f4f;
+    height: 60px;
+    font-weight: 700px;
+    background-color: transparent;
+}
+
+
+.navb ul li a:hover{
+    color: black;
+    background-color:#f6f6f6 ;
+    font-weight: bold;
+}
+
+
+.selct_op{ 
+    display: block;
+    width: 100%; /* Make each select element take the full width */
+    margin-bottom: 10px; /* Adjust spacing between selects */
+    height: 80px;
 }
