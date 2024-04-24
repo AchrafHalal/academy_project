@@ -28,8 +28,8 @@
                     </a>
                 </li>
                 <li class="pg">
-                <a href="#" class="pages">
-                     المديريات الاقليمية
+                <a href="{{route('academy')}}" class="pages text-center">
+                    الأكاديمية الجهوية للتربية والتكوين
                 </a>
                 </li>
                 <li class="pg">
