@@ -1,3 +1,4 @@
+-- Active: 1710095898738@@127.0.0.1@3306@academia
 use academia;
 
 INSERT INTO associations (phone, responsable_name, name, created_at, updated_at) VALUES
