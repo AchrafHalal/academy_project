@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\AmbassadeurController;
 use App\Http\Controllers\AssociationController;
 use App\Http\Controllers\DepartementController;
@@ -30,7 +31,7 @@ Route::get('/departement/{region}/{departement}',[DepartementController::class ,
 
 Route::get('/departement/{name}',[DepartementController::class , 'show_name'])->name('departement.show_name');
 
-Route::get('/departement/edit/{name}',[DepartementController::class , 'edit'])->name('departement.edit');
+// Route::get('/departement/edit/{name}',[DepartementController::class , 'edit'])->name('departement.edit');
 
 // etablissement routes
 
@@ -56,3 +57,9 @@ Route::get('/ambassadeur/{Ambassadeur_region}',[AmbassadeurController::class , '
 Route::get('/association',[AssociationController::class , 'index'])->name('association');
 
 Route::get('/association/{name}',[AssociationController::class , 'show'])->name('association.show');
+
+// Route of Academy
+
+Route::get('/academy',[AcademyController::class , 'index'])->name('academy');
+
+Route::get('/academy/{departement}',[AcademyController::class , 'show_name'])->name('academy.show');
