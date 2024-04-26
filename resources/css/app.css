@@ -72,9 +72,22 @@
 }
 
 
+/* Path: resources/css/app.css */
 .selct_op{ 
     display: block;
     width: 100%; /* Make each select element take the full width */
     margin-bottom: 10px; /* Adjust spacing between selects */
     height: 80px;
+}
+
+@media (max-width: 768px) {
+    .selct_op {
+        height: 60px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .selct_op {
+        height: 40px; /* Adjust height for even smaller screens */
+    }
 }

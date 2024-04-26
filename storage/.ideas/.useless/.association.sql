@@ -54,3 +54,6 @@ INSERT INTO associations (phone, responsable_name, name, created_at, updated_at)
 ('0677712173', 'انكية ديدة', 'الجمعية النسائية للتنمية وادماج الطفل', NOW(), NOW()),
 ('0678860561/0671666773', 'الصغرى الكنتاوي', 'المركز الثقافي الكنتي فرع الداخلة', NOW(), NOW()),
 ('0672035745', 'مريم ناهي', 'البراعم لرعاية وحماية الطفل', NOW(), NOW());
+
+
+SELECT count(*) FROM associations;

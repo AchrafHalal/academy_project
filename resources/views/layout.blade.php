@@ -13,7 +13,9 @@
 <body>
     <nav class="navb lg:w-full md:w-48 w-26 flex flex-col justify-center items-center gap-4">
         <div class="flex justify-center items-center">
-            <img src="{{asset('logo.gif')}}" class="w-64" alt="logo">
+            <a href="{{url('/')}}">
+                <img src="{{asset('logo.gif')}}" class="w-64" alt="logo">
+            </a>
         </div>
         <button id="toggle" class="w-12 lg:hidden block" ><i class="fas fa-bars"></i></button>
         <div class="w-full" id="div-ul">
